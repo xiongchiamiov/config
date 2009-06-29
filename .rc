@@ -1,0 +1,83 @@
+alias ls='ls --color=auto'
+#eval `dircolors -b`
+
+alias pacman='pacman-color'
+alias p='sudo pacman-color'
+alias y='yaourt'
+alias powerpill='powerpill --silent-aria'
+#alias mirror-up='reflector -h 12 -t 10 -o /home/pearson/.config/powerpill/reflector_mirrorlist'
+function installed () y -Qei | awk '/^Name/ {name=$3} /^Groups/ { if ( $3 != "base" && $3 != "base-devel") { print name } }'
+
+alias python='ipython'
+alias cpan='sudo perl -MCPAN -eshell'
+
+alias vogon='ssh jmpearso@vogon.csc.calpoly.edu'
+alias falcon='ssh jmpearso@falcon.csc.calpoly.edu'
+alias xeon='ssh jmpearso@multicore.csc.calpoly.edu'
+alias sparc='ssh jmpearso@sparc.csc.calpoly.edu'
+alias load='ssh jmpearso@unix0.csc.calpoly.edu'
+alias u1='ssh jmpearso@unix1.csc.calpoly.edu'
+alias u2='ssh jmpearso@unix2.csc.calpoly.edu'
+alias u3='ssh jmpearso@unix3.csc.calpoly.edu'
+alias u4='ssh jmpearso@unix4.csc.calpoly.edu'
+alias 4u='ssh 70.84.182.146'
+alias o='ssh jmpearso@orlov.atl.calpoly.edu'
+alias b='ssh jmpearso@blofeld.atl.calpoly.edu'
+alias b2='ssh jmpearso@blofeld2.ceng.calpoly.edu'
+alias home='ssh noname@66.169.234.126 -p 2200'
+alias alamo='ssh pearson@alamo.csc.calpoly.edu'
+
+alias ll="ls -l"
+alias la="ls -A"
+alias lla="ls -lA"
+
+# when making directories, cd into them
+function mk () mkdir $1 && cd $1
+# cd does an ls, too
+function cd () builtin cd $1 && ls
+
+# find broken soft links
+alias brokenls='find . -type l | (while read FN ; do test -e "$FN" || ls -ld "$FN"; done)'
+
+alias untar="tar xvf"
+alias untgz="tar xvzf"
+alias untargz="tar xvzf"
+alias unbz2="tar xvjf"
+
+alias tgz="tar czvf"
+alias targz="tar czvf"
+
+# add progress bars to some things
+# http://www.theiling.de/projects/bar.html
+function cp () bar -o $2 $1
+
+# easy listing of screen sessions
+alias sls='screen -ls'
+
+alias 357='cd ~/Documents/school/csc\ 357'
+alias cd4u='cd ~/Documents/xyztextbooks/4u'
+
+# get to site folders easily
+function site {
+screen -r $1
+if (( $? )); then
+	cd ~/sites/$1/main/$1_website
+	screen -S $1
+fi
+}
+
+function dev {
+/usr/bin/python manage.py $* --settings=settings_jmpearso
+}
+
+function eng {
+better=`echo $1 | cut -c 12- | sed 's/.rar//'`
+mkdir $better
+unrar x $1 $better/
+}
+
+function engall {
+for i in `ls *.rar`; do
+eng $i
+done;
+}
