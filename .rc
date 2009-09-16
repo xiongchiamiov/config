@@ -49,7 +49,7 @@ alias targz="tar czvf"
 
 # add progress bars to some things
 # http://www.theiling.de/projects/bar.html
-function cp () bar -o $2 $1
+#function cp () bar -o $2 $1
 
 # easy listing of screen sessions
 alias sls='screen -ls'
