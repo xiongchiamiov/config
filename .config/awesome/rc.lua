@@ -22,7 +22,8 @@ beautiful.init(theme_path)
 terminal = "sakura"
 browser = "firefox"
 --menu = "exec `dmenu_path | dmenu`"
-menu = "dmenu_run"
+--menu = "dmenu_run"
+menu = "exec `dmenu_path | yeganesh`"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 wallpaper = "rotate_background.pl"
@@ -236,7 +237,7 @@ globalkeys = awful.util.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn(browser) end),
-    awful.key({ modkey,           }, "q",      function () awful.util.spawn(menu) end),
+    awful.key({ modkey,           }, "q",      function () awful.util.spawn_with_shell(menu) end),
     awful.key({ modkey,           }, "w",      function () awful.util.spawn(wallpaper) end),
     awful.key({ modkey,           }, "e",      function () awful.util.spawn(steam) end),
 
