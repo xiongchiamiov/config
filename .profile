@@ -21,6 +21,7 @@ export WEBWORK_ROOT=/opt/webwork/webwork2
 export CENG_PROJ_HOME='/home/pearson/sites'
 export PYTHON_PATH=$CENG_PROJ_HOME/ceng-lib/main/python
 export PYTHONPATH='/home/pearson/Documents/'
+export PYTHONSTARTUP=~/.pythonrc
 
 
 . $HOME/.zshrc
