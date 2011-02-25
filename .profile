@@ -1,8 +1,9 @@
 export KDEWM=awesome
 
-#ck-launch-session nm-applet &
+ck-launch-session nm-applet &
 #amarok &
-stjerm -k f12 -ah 0 -o 60 -tp top -h 250 -w 1280 &
+stjerm -k f12 -ah 0 -o 60 -tp top -h 250 -w 1366 &
+#batterymon &
 
 export PATH=$PATH:/home/pearson/bin
 export EDITOR=/usr/bin/vim
@@ -22,6 +23,12 @@ export CENG_PROJ_HOME='/home/pearson/sites'
 export PYTHON_PATH=$CENG_PROJ_HOME/ceng-lib/main/python
 export PYTHONPATH='/home/pearson/Documents/'
 export PYTHONSTARTUP=~/.pythonrc
+export CLASSPATH=$CLASSPATH:/home/pearson/packages/sqlitejdbc-v056.jar
+export JYTHONPATH=$JYTHONPATH:/home/pearson/packages/django-jython-1.1.1
+export JYTHONPATH=$JYTHONPATH:/home/pearson/packages/django-debug-toolbar
+export JYTHONPATH=$JYTHONPATH:/home/pearson/packages/postgresql-8.4-701.jdbc4.jar
+
+export _JAVA_AWT_WM_NONREPARENTING=1;
 
 
 . $HOME/.zshrc

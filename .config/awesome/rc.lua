@@ -26,7 +26,7 @@ browser = "firefox"
 menu = "exec `dmenu_path | yeganesh`"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
-wallpaper = "rotate_background.pl"
+wallpaper = "rotate_background"
 steam = "wine /home/pearson/.wine/drive_c/Program\ Files/Steam/steam.exe"
 
 -- Default modkey.
@@ -79,7 +79,7 @@ apptags =
 }
 
 -- Define if we want to use titlebar on all applications.
-use_titlebar = false
+use_titlebar = true
 -- }}}
 
 -- {{{ Tags
@@ -354,7 +354,7 @@ awful.rules.rules = {
 -- Signal function to execute when a new client appears.
 client.add_signal("manage", function (c, startup)
     -- Add a titlebar
-    -- awful.titlebar.add(c, { modkey = modkey })
+    --awful.titlebar.add(c, { modkey = modkey })
 
     -- Enable sloppy focus
     c:add_signal("mouse::enter", function(c)

@@ -22,7 +22,21 @@ alias sudo="sudo -E"
 # complete screen sessions
 compctl -g "/tmp/screens/S-${USER}/*(p:t)" screen
 
+function _pip_completion {
+  local words cword
+  read -Ac words
+  read -cn cword
+  reply=( $( COMP_WORDS="$words[*]" \ 
+             COMP_CWORD=$(( cword-1 )) \
+             PIP_AUTO_COMPLETE=1 $words[1] ) )
+}
+compctl -K _pip_completion pip
+# pip zsh completion end
+
 # don't store the same line more than once in a row in history
 setopt HIST_IGNORE_DUPS
 
 source ~/.rc
+#eval `ssh-agent`
+
+# pip zsh completion start
