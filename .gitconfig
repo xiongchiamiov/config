@@ -26,3 +26,7 @@
 	email = xiong.chiamiov@gmail.com
 [github]
 	user = xiongchiamiov
+[merge]
+	tool = kdiff3
+[push]
+	default = current

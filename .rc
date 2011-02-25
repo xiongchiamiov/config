@@ -8,8 +8,12 @@ alias powerpill='powerpill --silent-aria'
 #alias mirror-up='reflector -h 12 -t 10 -o /home/pearson/.config/powerpill/reflector_mirrorlist'
 #function installed () y -Qei | awk '/^Name/ {name=$3} /^Groups/ { if ( $3 != "base" && $3 != "base-devel") { print name } }'
 
-alias python='ipython'
+#alias python='ipython'
+alias ipython='ipython -pydb'
 alias cpan='sudo perl -MCPAN -eshell'
+alias gits='git svn'
+alias gitl='git log --graph --pretty=oneline --abbrev-commit'
+alias vim='vim -p'
 
 alias vogon='ssh jmpearso@vogon.csc.calpoly.edu'
 alias falcon='ssh jmpearso@falcon.csc.calpoly.edu'
@@ -26,6 +30,7 @@ alias b='ssh jmpearso@blofeld.atl.calpoly.edu'
 alias b2='ssh jmpearso@blofeld2.ceng.calpoly.edu'
 alias home='ssh noname@66.169.234.126 -p 2200'
 alias alamo='ssh pearson@alamo.csc.calpoly.edu'
+alias mpd='ssh -L 8000:misc-arch:8000 fileserverness.ath.cx'
 
 alias ll="ls -l"
 alias la="ls -A"
