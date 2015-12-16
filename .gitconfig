@@ -3,6 +3,10 @@
 	co = checkout
 	st = status
 	b = branch
+	d = diff
+	ds = diff --cached
+	dc = diff --cached
+	lg = log --graph --oneline
 [color]
 	ui = auto
 [color "branch"]

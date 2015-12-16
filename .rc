@@ -6,7 +6,6 @@ alias y='packer'
 
 alias ipython='ipython -pydb'
 alias cpan='sudo perl -MCPAN -eshell'
-alias gitl='git log --graph --pretty=oneline --abbrev-commit'
 alias vim='vim -p'
 
 alias ll="ls -l"
