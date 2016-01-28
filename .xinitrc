@@ -56,6 +56,7 @@ setxkbmap -option 'caps:ctrl_modifier,altwin:swap_lalt_lwin'
 xcape -e 'Caps_Lock=Escape'
 
 cbatticon &
+xfce4-clipman &
 
 
 exec awesome
