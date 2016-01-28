@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/usr/lib/ruby/gems/1.9.1/gems/mg-0.0.8'
-let g:netrw_dirhist_2='/usr/lib/ruby/gems/1.9.1/gems/mg-0.0.8/lib'
