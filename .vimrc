@@ -13,10 +13,13 @@ call neobundle#begin(expand('~/.vim/bundle'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+
 " Add or remove your Bundles here:
+NeoBundle 'rhysd/committia.vim'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
 
 " Required:
 call neobundle#end()
