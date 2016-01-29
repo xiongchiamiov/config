@@ -1,1 +1,5 @@
 .netrwhist
+
+# Ignore the actual things checked out here, since NeoBundle will fetch/update
+# them as necessary.
+bundle/*
