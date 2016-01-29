@@ -19,6 +19,8 @@ NeoBundle 'rhysd/committia.vim'
 NeoBundle 'ciaranm/detectindent'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'easymotion/vim-easymotion'
+NeoBundle 'haya14busa/incsearch.vim'
+NeoBundle 'haya14busa/incsearch-easymotion.vim'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -59,4 +61,9 @@ map <Leader> <Plug>(easymotion-prefix)
 
 " Always show some context at the top or bottom from the cursor.
 set scrolloff=2
+
+" Use fancy incsearch all the fucking time.
+map /  <Plug>(incsearch-easymotion-/)
+map ?  <Plug>(incsearch-easymotion-?)
+map g/ <Plug>(incsearch-easymotion-stay)
 
