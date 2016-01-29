@@ -2,7 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=100
 SAVEHIST=100
-setopt appendhistory autocd extendedglob
+setopt appendhistory autocd correct extendedglob
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
