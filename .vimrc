@@ -21,6 +21,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'haya14busa/incsearch.vim'
 NeoBundle 'haya14busa/incsearch-easymotion.vim'
+NeoBundle 'altercation/vim-colors-solarized'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -39,8 +40,6 @@ NeoBundleCheck
 
 
 set number
-
-colo less
 
 " Indent settings
 set autoindent
@@ -66,4 +65,9 @@ set scrolloff=2
 map /  <Plug>(incsearch-easymotion-/)
 map ?  <Plug>(incsearch-easymotion-?)
 map g/ <Plug>(incsearch-easymotion-stay)
+
+" Do pretty color things.
+syntax enable
+set background=dark
+colorscheme solarized
 
