@@ -16,6 +16,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
 NeoBundle 'rhysd/committia.vim'
+NeoBundle 'ciaranm/detectindent'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -37,8 +38,10 @@ set number
 
 colo less
 
+" Indent settings
 set autoindent
 set tabstop=4
+let g:detectindent_preferred_expandtab=1
 let g:detectindent_preferred_indent=4
 autocmd BufReadPost * :DetectIndent
 
