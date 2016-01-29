@@ -12,6 +12,9 @@ alias ll="ls -l"
 alias la="ls -A"
 alias lla="ls -lA"
 
+# I mis-type this one often enough, don't even rely on zsh's correction features.
+alias gi=git
+
 # when making directories, cd into them
 function mk {
 mkdir $1 && cd $1
