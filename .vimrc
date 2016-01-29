@@ -17,6 +17,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Add or remove your Bundles here:
 NeoBundle 'rhysd/committia.vim'
 NeoBundle 'ciaranm/detectindent'
+NeoBundle 'tpope/vim-fugitive'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
