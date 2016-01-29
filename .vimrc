@@ -18,6 +18,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'rhysd/committia.vim'
 NeoBundle 'ciaranm/detectindent'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'easymotion/vim-easymotion'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -50,4 +51,9 @@ autocmd BufReadPost * :DetectIndent
 nnoremap <F3> :set invpaste paste?<CR>
 set pastetoggle=<F3>
 set showmode
+
+" Set leader to something easy to type.
+let mapleader=","
+" Give the leader key completely over to EasyMotion.
+map <Leader> <Plug>(easymotion-prefix)
 
