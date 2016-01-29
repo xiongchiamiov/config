@@ -57,3 +57,6 @@ let mapleader=","
 " Give the leader key completely over to EasyMotion.
 map <Leader> <Plug>(easymotion-prefix)
 
+" Always show some context at the top or bottom from the cursor.
+set scrolloff=2
+
