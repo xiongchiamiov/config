@@ -34,3 +34,7 @@ alias unbz2="tar xvjf"
 
 alias tgz="tar czvf"
 alias targz="tar czvf"
+
+# Unplugging my display undoes this (listed in .xinitrc) for some reason, so I
+# need to re-run it when plugging back in.
+alias fix-win="setxkbmap -option 'caps:ctrl_modifier,altwin:swap_lalt_lwin'"
