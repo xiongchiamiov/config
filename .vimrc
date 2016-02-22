@@ -48,6 +48,23 @@ let g:detectindent_preferred_expandtab=1
 let g:detectindent_preferred_indent=4
 autocmd BufReadPost * :DetectIndent
 
+" Hard-wrap at 80 characters.
+set textwidth=79
+" Auto-wrap using textwidth.
+set formatoptions+=t
+" Don't wrap a long line if it was already too long before entering insert
+" mode.
+set formatoptions+=l
+" Auto-wrap comments.
+set formatoptions+=c
+" Don't insert comment leaders when manually adding linebreaks.
+set formatoptions-=r
+" Allow formatting of comments with "gq".
+set formatoptions+=q
+" Remove comment leaders when joining short comment lines.
+set formatoptions+=j
+
+
 " Don't do stupid indentation when pasting.
 nnoremap <F3> :set invpaste paste?<CR>
 set pastetoggle=<F3>
