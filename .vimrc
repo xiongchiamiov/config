@@ -71,6 +71,9 @@ nnoremap <F3> :set invpaste paste?<CR>
 set pastetoggle=<F3>
 set showmode
 
+" Make backspace work like you'd generally expect.
+set backspace=indent,eol,start
+
 " Set leader to something easy to type.
 let mapleader=","
 " Give the leader key completely over to EasyMotion.
