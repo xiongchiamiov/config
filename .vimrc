@@ -22,6 +22,7 @@ NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'haya14busa/incsearch.vim'
 NeoBundle 'haya14busa/incsearch-easymotion.vim'
 NeoBundle 'altercation/vim-colors-solarized'
+" Call NeoBundleUpdate to update them to the latest versions.
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
