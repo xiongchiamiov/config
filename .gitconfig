@@ -11,6 +11,7 @@
 	lg = log --graph --oneline
 	ap = add -p
 	tpush = push
+	tpull = pull
 [color]
 	ui = auto
 [color "branch"]
