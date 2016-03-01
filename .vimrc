@@ -65,6 +65,8 @@ set formatoptions+=q
 " Remove comment leaders when joining short comment lines.
 set formatoptions+=j
 
+" Show the line and column numbers and percent scroll all the time.
+set ruler
 
 " Don't do stupid indentation when pasting.
 nnoremap <F3> :set invpaste paste?<CR>
