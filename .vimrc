@@ -65,6 +65,8 @@ set formatoptions-=r
 set formatoptions+=q
 " Remove comment leaders when joining short comment lines.
 set formatoptions+=j
+" Set the textwidth back smaller when we're writing a commit message.
+autocmd FileType gitcommit setlocal textwidth=72
 
 " Show the line and column numbers and percent scroll all the time.
 set ruler
