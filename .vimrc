@@ -22,6 +22,7 @@ NeoBundle 'easymotion/vim-easymotion'
 NeoBundle 'haya14busa/incsearch.vim'
 NeoBundle 'haya14busa/incsearch-easymotion.vim'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'pearofducks/ansible-vim'
 " Call NeoBundleUpdate to update them to the latest versions.
 
 " You can specify revision/branch/tag.
@@ -94,3 +95,10 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+"" Extra pretty color things for ansible.
+" Super highlight key=, but only on newlines.
+let g:ansible_attribute_highlight = 'ob'
+" Highlight 'name:'.
+let g:ansible_name_highlight = 'b'
+" Highlight additional interesting words.
+let g:ansible_extra_keywords_highlight = 1
