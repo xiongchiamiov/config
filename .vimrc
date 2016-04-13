@@ -67,6 +67,8 @@ set formatoptions+=q
 set formatoptions+=j
 " Set the textwidth back smaller when we're writing a commit message.
 autocmd FileType gitcommit setlocal textwidth=72
+" Show a visual indicator of where the boundary is.
+set colorcolumn=80
 
 " Show the line and column numbers and percent scroll all the time.
 set ruler
