@@ -38,3 +38,22 @@ alias targz="tar czvf"
 # Unplugging my display undoes this (listed in .xinitrc) for some reason, so I
 # need to re-run it when plugging back in.
 alias fix-win="setxkbmap -option 'caps:ctrl_modifier,altwin:swap_lalt_lwin'"
+
+function decode-authorization-failure-message {
+    if [ $# -ne 1 ] || [ "$1" = -h ] || [ "$1" = --help ]; then
+        cat <<'EOT'
+Usage: decode-authorization-failure-message <message>
+
+Use this when Amazon gives you an "Encoded authorization failure message" and
+you need to turn it into something readable.
+EOT
+        return 1
+    fi
+
+    aws sts decode-authorization-message --encoded-message "$1" |
+        jq '.["DecodedMessage"]' |
+        sed 's/\\"/"/g' |
+        sed 's/^"//' |
+        sed 's/"$//' |
+        jq
+}
