@@ -86,6 +86,11 @@ let mapleader=","
 " Give the leader key completely over to EasyMotion.
 map <Leader> <Plug>(easymotion-prefix)
 
+" Show undesired whitespace, but allow toggling it off.
+set listchars=tab:▸_,trail:·
+set list
+nnoremap <Leader><Tab> :set list!<CR>
+
 " Always show some context at the top or bottom from the cursor.
 set scrolloff=2
 
