@@ -7,6 +7,7 @@ alias y='packer'
 alias ipython='ipython -pydb'
 alias cpan='sudo perl -MCPAN -eshell'
 alias vim='vim -p'
+alias info='info --vi-keys'
 
 alias ll="ls -l"
 alias la="ls -A"
