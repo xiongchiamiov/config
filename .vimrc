@@ -25,6 +25,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'pearofducks/ansible-vim'
 " Update to non-sucky Markdown rendering on old versions of vim.
 NeoBundle 'tpope/vim-markdown'
+NeoBundle 'editorconfig/editorconfig-vim'
 " Call NeoBundleUpdate to update them to the latest versions.
 
 " You can specify revision/branch/tag.
