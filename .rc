@@ -1,8 +1,9 @@
 alias ls='ls --color=auto'
 #eval `dircolors -b`
 
-alias p='packer'
 alias y='packer'
+# Force packer to use powerpill as the "pacman" executable.
+alias pacman='powerpill'
 
 alias ipython='ipython -pydb'
 alias cpan='sudo perl -MCPAN -eshell'
