@@ -17,6 +17,9 @@ alias lla="ls -lA"
 # I mis-type this one often enough, don't even rely on zsh's correction features.
 alias gi=git
 
+# This is too damn long to type all the time.
+alias tf=terraform
+
 # when making directories, cd into them
 function mk {
 mkdir $1 && cd $1
