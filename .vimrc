@@ -26,6 +26,8 @@ NeoBundle 'pearofducks/ansible-vim'
 " Update to non-sucky Markdown rendering on old versions of vim.
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'editorconfig/editorconfig-vim'
+" Add syntax recognition for Terraform files.
+NeoBundle 'hashivim/vim-terraform'
 " Call NeoBundleUpdate to update them to the latest versions.
 
 " You can specify revision/branch/tag.
