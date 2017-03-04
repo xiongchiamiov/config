@@ -25,6 +25,7 @@
 [core]
 	whitespace = fix,-indent-with-non-tab,cr-at-eol
 	excludesfile = ~/.gitignore
+	editor = vim
 [user]
 	name = xiongchiamiov
 	email = xiong.chiamiov@gmail.com
