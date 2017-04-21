@@ -103,6 +103,9 @@ set scrolloff=2
 map /  <Plug>(incsearch-easymotion-/)
 map ?  <Plug>(incsearch-easymotion-?)
 map g/ <Plug>(incsearch-easymotion-stay)
+" Do case-insensitive searches, unless there's an uppercase letter.
+set ignorecase
+set smartcase
 
 " Do pretty color things.
 syntax enable
