@@ -12,6 +12,7 @@
 	ap = add -p
 	tpush = push
 	tpull = pull
+	fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
 [color]
 	ui = auto
 [color "branch"]
@@ -35,3 +36,5 @@
 	tool = kdiff3
 [push]
 	default = current
+[rebase]
+	autosquash = true
