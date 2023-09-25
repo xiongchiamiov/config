@@ -5,6 +5,13 @@ SAVEHIST=100
 setopt appendhistory autocd autopushd correct extendedglob
 bindkey -v
 # End of lines configured by zsh-newuser-install
+
+# Various commands installed by zsh install completion files; let's use them.
+# https://docs.brew.sh/Shell-Completion
+if type brew &>/dev/null; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/pearson/.zshrc'
 
