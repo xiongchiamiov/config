@@ -113,6 +113,10 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Enable folding, but don't collapse folds by default.
+set foldmethod=indent
+set foldlevelstart=99
+
 "" Extra pretty color things for ansible.
 " Super highlight key=, but only on newlines.
 let g:ansible_attribute_highlight = 'ob'
