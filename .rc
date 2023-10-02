@@ -26,7 +26,7 @@ mkdir $1 && cd $1
 }
 # cd does an ls, too
 function cd {
-builtin cd $1 && ls
+  builtin cd "$1" && ls
 }
 
 # find broken soft links
