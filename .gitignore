@@ -1,3 +1,5 @@
 *.swp
 # Ansible creates these on every playbook that ever fails.
 *.retry
+
+.DS_Store
